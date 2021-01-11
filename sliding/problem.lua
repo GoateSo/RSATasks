@@ -12,7 +12,7 @@ sliding({1, 2, 3, 4}, 3, 1) → {{1, 2, 3}, {2, 3, 4}}
 sliding({1, 2, 3, 4, 5}, 2, 2) → {{1, 2}, {3, 4}, {5}}
 sliding({1, 2, 3, 4, 5, 6}, 2, 3) → {{1, 2}, {4, 5}}
 ]]
-local mkTests = require(script.parent.testgen)
+local mkTests = require(script.Parent.testgen)
 
 --template
 local function sliding(arr, width, step)
