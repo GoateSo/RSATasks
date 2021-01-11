@@ -1,6 +1,6 @@
 # RSA Questions Challenges
 
-challenges to determine whether or not to admit a person into `#questions-tier-2`
+fairly simple challenges to determine whether or not to admit someone into `#questions-tier-2`
 
 
 ## Disclaimers: 
