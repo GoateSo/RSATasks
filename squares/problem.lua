@@ -16,7 +16,7 @@ results in:
     6   36
     8   64
 ]]
-local mkTests = require "testgen"
+local mkTests = require(script.parent.testgen)
 
 --template
 local function squares(limit, cur)
