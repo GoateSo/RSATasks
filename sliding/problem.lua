@@ -1,6 +1,4 @@
 --[[
-Challenge 3 - sliding window
- 
 directions: Groups elements of the array in fixed size blocks by passing a "sliding window" (https://tinyurl.com/slidinwindow) over them
  
 inputs: arr, the array which the sliding window is passed over
