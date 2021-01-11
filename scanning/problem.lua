@@ -11,7 +11,7 @@ output:
     
 ex: 
     scanRight({1,3,5,7,9}, 0, function(a,b)
-        return a + b
+        return b + a
     end)
 yields
     {25,24,21,16,9,0}
