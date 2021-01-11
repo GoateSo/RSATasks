@@ -1,5 +1,5 @@
  --[[
-Autogenerates test cases for sliding problem
+Autogenerates test cases for squares problem
 
 output: array of:
   limit, integer in range [0,500]
