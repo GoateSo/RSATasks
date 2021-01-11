@@ -8,14 +8,14 @@ inputs: arr, the array which the sliding window is passed over
 output: an array of arrays of size `width`, except the last array, which may be smaller
 
 example:
-    sliding({1, 2, 3, 4}, 3, 1) → {{1, 2, 3}, {2, 3, 4}}
-    +----------------+
-    |Windows Position|
-    +------------+---+
-    |[1   2   3] | 4 | 
-    +------------+---+
-    | 1 |[3  -1  -3] |
-    +---+------------+
+    sliding({1, 2, 3, 4}, 2, 1) → {{1, 2}, {2, 3}, {3, 4}}
+    +--------------+
+    |[1  2]| 3 | 4 | 
+    |--------------|
+    | 1 |[2  3]| 4 |
+    |--------------|
+    | 1 | 2 |[3  4]|
+    +--------------+
 
 additional examples:
     sliding({1, 2, 3, 4, 5}, 2, 2) → {{1, 2}, {3, 4}, {5}}
