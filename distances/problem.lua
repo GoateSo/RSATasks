@@ -12,7 +12,7 @@ Example:
 	and the distance between the second and third point is ~11.575837.
 ]]
 
-local mkTests = require(script.parent.testgen)
+local mkTests = require(script.Parent.testgen)
 
 -- Only modify this function!
 -- Bonus challenge ((Optional)) : solve this in O(n log n) time.
