@@ -16,7 +16,7 @@ results in:
     6   36
     8   64
 ]]
-local t = require "testgen"
+local mkTests = require "testgen"
 
 --template
 local function squares(limit, cur)
@@ -24,7 +24,7 @@ local function squares(limit, cur)
 end
  
 --testing template
-for _, lim in ipairs(t.mkTests()) do
+for _, lim in ipairs(mkTests()) do
     for i, square in squares, lim do
         assert(i^2 == square and i%2 == 0, "test failed") 
     end
