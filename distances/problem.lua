@@ -15,7 +15,7 @@ Example:
 local mkTests = require(script.parent.testgen)
 
 -- Only modify this function!
--- Bonus challenge: solve this in O(n log n) time.
+-- Bonus challenge ((Optional)) : solve this in O(n log n) time.
 local function minimum_distance(points)
     return 0
 end
