@@ -4,7 +4,7 @@ Challenge 2 - iterators
 directions: implement an iterator function which outputs the squares of all even natural numbers up to a given number
  
 inputs: limit, a positive integer at which iteration should stop
-        cur, a nullable positive integer which represents the previous number
+        cur, a nullable positive integer which represents the previous number (default input is zero, only included because of how lua iterators work)
  
 example: 
     for i, s in squares, 8 do
@@ -24,5 +24,5 @@ end
 --testing template
 local limit = 5
 for i, square in squares, 5 do
-   assert(i^2 == square and i%2 == 0, "test failed") 
+    assert(i^2 == square and i%2 == 0, "test failed") 
 end
