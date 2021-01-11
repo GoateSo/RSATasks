@@ -23,5 +23,5 @@ end
 for _,v in ipairs(mkTests()) do
     local arr, width, step = table.unpack(v)
     local out = sliding(arr, width, step)
-    print("passed")
+    --...
 end
