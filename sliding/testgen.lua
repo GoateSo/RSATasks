@@ -1,8 +1,8 @@
 --[[
 Autogenerates test cases for sliding problem
 
-output: table of three values:
-	arr, an array with size in range [0,5000], and with elements in range [-100,100] (hard coded limits; ideally should work for arbitrary values and arbitrary sizes)
+output: arrays of three values:
+	arr, an array with size in range [0,5000], and with elements in range [-100,100]
 	width, a positive integer in range [1,100]
 	step, a positive integer in range [1,100]
 ]]
