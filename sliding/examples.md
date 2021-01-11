@@ -1,5 +1,5 @@
 # more examples of inputs and outputs
-```
+```scala
   {{}, 4, 3}   --→   {}
   {{}, 1, 10}   --→   {}
   {{}, 6, 10}   --→   {}
