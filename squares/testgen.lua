@@ -1,7 +1,7 @@
  --[[
 Autogenerates test cases for sliding problem
 
-output:
+output: array of:
   limit, integer in range [0,500]
 ]]
 return function(n)
