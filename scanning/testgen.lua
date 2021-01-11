@@ -42,6 +42,6 @@ return function(n)
         for j=1,math.random(50) do
             t[j] = math.random(-100,100)
         end
-        r[i] = {t,math.random(-1000,1000),functions[math.random(#functions)]}
+        ret[i] = {t,math.random(-1000,1000),functions[math.random(#functions)]}
     end
 end
