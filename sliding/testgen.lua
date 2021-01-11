@@ -6,7 +6,7 @@ output: table of three values:
 	width, a positive integer in range [0,100]
 	step, a positive integer in range [0,100]
 ]]
-local function mkTests(n)
+return function(n)
     n = n or 100
     local ret = {}
     for i = 1, n do
