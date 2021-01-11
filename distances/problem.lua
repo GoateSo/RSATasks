@@ -1,4 +1,5 @@
---[[
+--[[contributed by CntKillMe
+
 Input: points (an array of Vector3), #points >= 0, all points are unique.
 
 Output: the distance between the closest pair of points, or 0 if there are less than 2 points.
@@ -11,6 +12,8 @@ Example:
 	and the distance between the second and third point is ~11.575837.
 ]]
 
+local mkTests = require(script.parent.testgen)
+
 -- Only modify this function!
 -- Bonus challenge: solve this in O(n log n) time.
 local function minimum_distance(points)
@@ -18,12 +21,7 @@ local function minimum_distance(points)
 end
 
 --testing template
-local function test(points, expected)
+for _,points in ipairs(mkTests()) do
     local distance = minimum_distance(points) 
-    test_count = test_count + 1
- 
-    if math.abs(distance - expected) > 1e-6 then
-        test_fails = test_fails + 1
-        print(("Test %d failed: expected %.3f, got %.3f"):format(test_count, expected, distance))
-    end
+    -- ...
 end
