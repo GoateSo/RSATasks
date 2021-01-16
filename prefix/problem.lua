@@ -1,27 +1,27 @@
 --[[
 directions: evaluate an expression in prefix notation given as a string with the following operations or a single digit:
 
-	& <expr>	 : which computes the sum of all natural numbers smaller than <expr>
-	- <digit> <expr> : which subtracts an integer in range [0,9] by <expr>
-	+ <digit> <expr> : which adds an integer in range [0,9] to <expr>
+    & <expr>         : which computes the sum of all natural numbers smaller than <expr>
+    - <digit> <expr> : which subtracts an integer in range [0,9] by <expr>
+    + <digit> <expr> : which adds an integer in range [0,9] to <expr>
 
 input: an expression in prefix notation as a string
 
 output: an integer which results from evaluating the expression
 
 ex:
-	+1-53
+    +1-53
 yields
-	3
+    3
 since
-	5 - 3 = 2
-	1 + 2 = 3
+    5 - 3 = 2
+    1 + 2 = 3
 ]]
 local mkTests = require(script.Parent.testgen)
 
 --template
 local function eval(s)
-	return 0 
+    return 0 
 end
 
 --testing template
