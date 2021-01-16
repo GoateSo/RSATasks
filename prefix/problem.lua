@@ -26,5 +26,5 @@ end
 
 --testing template
 for _,v in ipairs(mkTests()) do
-	local res = eval(v)
+    local res = eval(v)
 end
