@@ -12,6 +12,6 @@ fairly simple challenges to determine whether or not to admit someone into `#que
 - each challenge consists of 
    - problem, a lua file which lays out the directions, inputs, desired outputs, as well as giving an explained example, a solution template, and a testing template for a challenge
    - testgen, a lua file which generates an array of inputs for the challenge
-   - examples, a file which gives additional examples of inputs and examples
+   - examples, a file which gives additional examples of inputs and outputs, which are seperated by a right facing arrow `-->`
 - to submit a solution, `[todo]`
 - to contribute any challenge, `[todo]`
