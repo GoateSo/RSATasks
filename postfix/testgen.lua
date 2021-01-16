@@ -1,3 +1,9 @@
+--[[
+Autogenerates test cases for prefix problem
+
+output:
+	a prefix expression of arbitrary length with an arbitrary combination of the operators listed in problem.lua
+]]
 local rExpr
 
 local function rDigit()
