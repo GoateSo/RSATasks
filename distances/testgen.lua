@@ -2,7 +2,7 @@
 Autogenerates test cases for distance problem
 
 output: 
-    possibly empty arrays of between 0 and 50 vector3s, with each of the X, Y, and Z values in range [-100,100]
+    possibly empty arrays of vector3s
 ]]
 return function(n)
 	n = n or 100
