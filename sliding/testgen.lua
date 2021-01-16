@@ -2,9 +2,9 @@
 Autogenerates test cases for sliding problem
 
 output: arrays of three values:
-	arr, an array with size in range [0,5000], and with elements in range [-100,100]
-	width, a positive integer in range [1,100]
-	step, a positive integer in range [1,100]
+	arr, a possibly empty array
+	width, a positive integer 
+	step, a positive integer 
 ]]
 return function(n)
     n = n or 100
