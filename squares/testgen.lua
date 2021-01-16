@@ -2,7 +2,7 @@
 Autogenerates test cases for squares problem
 
 output: array of:
-  limit, integer in range [0,500]
+  limit, a non-negative integer
 ]]
 return function(n)
     n = n or 100
