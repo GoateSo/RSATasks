@@ -2,8 +2,8 @@
 Autogenerates test cases for scanning problem
 
 output: arrays of
-    arr, a possibly empty array of size in range [0,50] with values in range [-100,100]
-    init, a value in range [-1000,1000]
+    arr, a possibly empty array
+    init, an integer
     op, a binary function which acts on 2 numbers and returns a number
 ]]
 
