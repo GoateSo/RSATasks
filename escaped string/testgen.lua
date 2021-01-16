@@ -2,7 +2,7 @@
 Autogenerates test cases for escaped string problem
 
 output:
-  an array of strings with at least 30 characters which contain 2 unescaped quotes, and between 0 and 5 escaped quotes within the unescaped quotes 
+  an array of strings which contain 2 unescaped quotes, and between 0 and 5 escaped quotes within the unescaped quotes 
 ]]
 local function insert(s,s2,i)
     return s:sub(1,i)..s2..s:sub(i+1)
