@@ -13,5 +13,4 @@ challenges to determine admission into `#questions-tier-2`
    - problem, a lua file which lays out the directions, inputs, desired outputs, as well as giving an explained example, a solution template, and a testing template for a challenge
    - testgen, a lua file which generates an array of inputs for the challenge
    - examples, a file which gives additional examples of inputs and outputs
-- to submit a solution, `[todo]`
-- to contribute any challenge, `[todo]`
+- to submit a solution, Dm me (@GoateSo#9628) on discord with your solution
