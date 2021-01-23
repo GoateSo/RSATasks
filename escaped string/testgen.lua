@@ -16,7 +16,7 @@ return function(n)
             t[j] = math.random(48,126)
         end
         local s = string.char(table.unpack(t)):gsub("\\","")
-        local k1 = math.random(3,#s // 2)
+        local k1 = math.random(3,math.floor(#s,2))
         local k2 = math.random(k1+5,#s)
         s = insert(s,"\"",k1)
         s = insert(s,"\"",k2+1)
