@@ -44,4 +44,5 @@ return function(n)
         end
         ret[i] = {t,math.random(-1000,1000),functions[math.random(#functions)]}
     end
+    return ret
 end
