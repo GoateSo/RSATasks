@@ -15,9 +15,6 @@ local functions = {
         return a - b
     end,
     function(a,b)
-        return b / a
-    end,
-    function(a,b)
         return a * b
     end,
     function(a,b)
@@ -27,10 +24,7 @@ local functions = {
         return a * a + b * b
     end,
     function(a,b)
-        return a % b
-    end,
-    function(a,b)
-        return a/2*(a-1)/b
+        return a/2*(a-1)/(math.abs(b)+1)
     end
 }
 
