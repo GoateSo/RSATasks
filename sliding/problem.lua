@@ -1,5 +1,6 @@
 --[[
-directions: Groups elements of the array in fixed size blocks by passing a "sliding window" over them
+directions: Groups elements of the array in fixed size blocks by passing a "sliding window" over them, stopping when reaching the end of the collection 
+            (when all elements are exhausted)
  
 inputs: arr, the array which the sliding window is passed over
         width, the number of elements per group
