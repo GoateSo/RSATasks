@@ -1,7 +1,7 @@
 --[[
 directions: evaluate an expression in prefix notation given as a string with the following operations or a single digit:
 
-    & <expr>         : which computes the sum of all natural numbers smaller than <expr>
+    & <expr>         : which computes the sum of all natural numbers smaller than or equal to <expr>
     - <digit> <expr> : which subtracts an integer in range [0,9] by <expr>
     + <digit> <expr> : which adds an integer in range [0,9] to <expr>
 
