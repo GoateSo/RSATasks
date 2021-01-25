@@ -17,7 +17,7 @@ since
     5 - 3 = 2
     1 + 2 = 3
 ]]
-local mkTests,testCases = unpack(require(script.Parent.testgen))
+local mkTests,testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function eval(s)
