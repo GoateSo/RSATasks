@@ -24,7 +24,7 @@ end
 --testing template
 for _, lim in ipairs(mkTests()) do
     for i, square in squares, lim do
-        assert(i^2 == square and i%2 == 0, "test failed") 
+        assert(i^2 == square and i%2 == 0 and i <= lim, "test failed") 
     end
 end
 
