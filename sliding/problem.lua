@@ -22,7 +22,7 @@ additional examples:
     sliding({1, 2, 3, 4, 5}, 2, 2) → {{1, 2}, {3, 4}, {5}}
     sliding({1, 2, 3, 4, 5, 6}, 2, 3) → {{1, 2}, {4, 5}}
 ]]
-local mkTests = require(script.Parent.testgen)
+local mkTests, testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function sliding(arr, width, step)
@@ -34,4 +34,20 @@ for _,v in ipairs(mkTests()) do
     local arr, width, step = table.unpack(v)
     local out = sliding(arr, width, step)
     --...
+end
+
+local function eq(s1,s2)
+    local r = #s1 == #s2
+    for i,t in ipairs(s1) do
+        r = r and #t == #s2[i]
+        for j,v in ipairs(t) do
+            r = r and v == s2[i][j]
+        end
+    end
+    return r
+end
+
+for input, output in pairs(testCases) do
+    local res = sliding(input)
+    assert(eq(res,output),("failed for %q, expected {%s} got {%s}"):format(input,table.concat(output,", "),table.concat(res,", ")))
 end

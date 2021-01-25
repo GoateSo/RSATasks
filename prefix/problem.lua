@@ -17,7 +17,7 @@ since
     5 - 3 = 2
     1 + 2 = 3
 ]]
-local mkTests = require(script.Parent.testgen)
+local mkTests,testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function eval(s)
@@ -27,4 +27,9 @@ end
 --testing template
 for _,v in ipairs(mkTests()) do
     local res = eval(v)
+end
+
+for input, output in pairs(testCases) do
+    local res = eval(input)
+    assert(res == output,("failed for %q, expected %s got %s"):format(input,output,res))
 end

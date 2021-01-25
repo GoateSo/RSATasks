@@ -13,7 +13,7 @@ since
 	while there are quotations around "Hello", they're escaped so they can neither act as starting quotes nor ending quotes, and are instead treated as literal characters
 ]]
 
-local mkTests = require(script.Parent.testgen)
+local mkTests, testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function getString(str)
@@ -23,4 +23,9 @@ end
 --testing template
 for _,str in ipairs(mkTests()) do
     local res = getString(str)
+end
+
+for input, output in pairs(testCases) do
+    local res = getString(input)
+    assert(res == output,("failed for %q, expected %s got %s"):format(input,output,res))
 end
