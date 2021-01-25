@@ -1,5 +1,5 @@
 --[[
-directions: implement an iterator function which outputs the squares of all even natural numbers up to a given number
+directions: implement a stateless iterator function which outputs the squares of all even natural numbers up to a given number
  
 inputs: limit, a positive integer at which iteration should stop
         cur, a nullable positive integer which represents the previous number 
