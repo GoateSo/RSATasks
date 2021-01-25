@@ -20,7 +20,7 @@ return function(n)
 		local k2 = math.random(k1+5,#s-5)
 		s = insert(s,"\"",k1)
 		s = insert(s,"\"",k2+1)
-		for j = 1, math.random(4) do
+		for j = 1, math.random(5) do
 			s = insert(s,[[\"]],math.random(1,#s))
 		end
 		if not s:match([[\\]]) then ret[#ret+1] = s end
