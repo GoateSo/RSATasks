@@ -24,7 +24,7 @@ since
     25 + 1 = 25
 ]]
 
-local mkTests = require(script.Parent.testgen)
+local mkTests,testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function scanRight(arr, init, op)
@@ -36,4 +36,17 @@ for _,case in ipairs(mkTests()) do
     local arr, init, op = table.unpack(case)
     local results = scanRight(arr, init, op)
     --...
+end
+
+local function eq(s1,s2)
+    local r = #s1 == #s2
+    for i,v in ipairs(s1) do
+        r = r and v == s2[i]
+    end
+    return r
+end
+
+for input, output in pairs(testCases) do
+    local res = sliding(input)
+    assert(eq(res,output),("failed for %q, expected {%s} got {%s}"):format(input,table.concat(output,", "),table.concat(res,", ")))
 end
