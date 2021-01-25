@@ -2,7 +2,7 @@
 directions: produce an array containing the intermediate results of applying a binary operator from right → left on an array
 
 inputs:
-    arr: a possibly empty array of any combination of values
+    arr: a possibly empty array of any combination of values (including the initial value)
     init: an inital value
     op: a binary operation to be applied on the intermediate result and the current element
     
