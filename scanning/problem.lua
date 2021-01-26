@@ -51,7 +51,7 @@ for input, output in pairs(testCases) do
     assert(eq(res,output),("failed for ({%s}, %d, %q), expected {%s} got {%s}"):format(
         table.concat(input[1], ", "),
         input[2],
-        tostring(input[3])    
+        tostring(input[3]),    
         table.concat(output,", "),
         table.concat(res,", "))
     )
