@@ -48,6 +48,12 @@ local function eq(s1,s2)
 end
 
 for input, output in pairs(testCases) do
-    local res = sliding(input)
-    assert(eq(res,output),("failed for %q, expected {%s} got {%s}"):format(input,table.concat(output,", "),table.concat(res,", ")))
+    local res = sliding(unpack(input))
+    assert(eq(res,output),("failed for ({%s}, %d, %d), expected {%s} got {%s}"):format(
+        table.concat(input[1], ", "),
+        input[2],
+        input[3]
+        table.concat(output,", "),
+        table.concat(res,", "))
+    )
 end
