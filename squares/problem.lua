@@ -14,7 +14,7 @@ results in:
     6   36
     8   64
 ]]
-local mkTests = require(script.Parent.testgen)
+local mkTests, testCases = table.unpack(require(script.Parent.testgen))
 
 --template
 local function squares(limit, cur)
@@ -28,3 +28,13 @@ for _, lim in ipairs(mkTests()) do
     end
 end
 
+for input, output in ipairs(testCases) do
+    local lim,cur = table.unpack(input)
+    local r1,r2 = squares(lim,cur)
+    local o1,o2 = table.unpack(output)
+    assert(r1 == o1 and o2 == r2, ("expected %s and %s for %s and %s, instead got %s and %s"):format(
+        o1, o2,
+        lim, cur,
+        r1, r2
+    ))
+end
