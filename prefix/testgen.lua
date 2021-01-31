@@ -1,6 +1,5 @@
 --[[
 Autogenerates test cases for prefix problem
-
 output:
 	a prefix expression of arbitrary length with an arbitrary combination of the operators listed in problem.lua
 ]]
@@ -49,7 +48,6 @@ end, {
     ["5"] = 5;
     ["2"] = 2;
     ["&3"] = 6;
-    ["&3"] = 6;
     ["-84"] = 4;
     ["+85"] = 13;
     ["+29"] = 11;
@@ -64,7 +62,6 @@ end, {
     ["-00"] = 0;
     ["+95"] = 14;
     ["-09"] = -9;
-    ["+62"] = 8;
     ["+59"] = 14;
     ["+53"] = 8;
     ["-18"] = -7;
