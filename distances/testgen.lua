@@ -13,7 +13,7 @@ return {function(n)
         for j=1,math.random(0,60) do
 			local x = Vector3.new(math.random(-100,100),math.random(-100,100),math.random(-100,100))
 			if not table.find(ret[i],x) then
-            	ret[i][#ret[i]] = x 
+				ret[i][#ret[i]] = x 
 			end
         end
     end
