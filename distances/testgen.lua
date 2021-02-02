@@ -10,8 +10,11 @@ return {function(n)
     local ret = {}
     for i=1,n do
         ret[i] = {}
-        for j=1,math.random(0,50) do
-            ret[i][j] = Vector3.new(math.random(-100,100),math.random(-100,100),math.random(-100,100))
+        for j=1,math.random(0,60) do
+			local x = Vector3.new(math.random(-100,100),math.random(-100,100),math.random(-100,100))
+			if not table.find(ret[i],x) then
+            	ret[i][#ret[i]] = x 
+			end
         end
     end
     return ret
