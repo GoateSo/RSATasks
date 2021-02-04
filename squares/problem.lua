@@ -30,7 +30,7 @@ end
 
 for input, output in ipairs(testCases) do
     local lim,prev = table.unpack(input)
-    local r1,r2 = squares(lim,cur)
+    local r1,r2 = squares(lim,prev)
     local o1,o2 = table.unpack(output)
     assert(r1 == o1 and o2 == r2, ("expected %s and %s for %s and %s, instead got %s and %s"):format(
         o1, o2,
