@@ -1,7 +1,7 @@
 --[[
 directions: implement a stateless iterator function which outputs the squares of all even natural numbers up to a given number
  
-inputs: limit, a positive integer at which iteration should stop
+inputs: limit, a positive integer at which iteration should stop (inclusive)
         prev, a nullable positive integer which represents the previous number 
 
 example: 
