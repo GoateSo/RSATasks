@@ -41,7 +41,7 @@ end
 local function eq(s1,s2)
     local r = #s1 == #s2
     for i,v in ipairs(s1) do
-        r = r and v == s2[i]
+        r = r and math.abs(v-s2[i])<1e-4 or (v == math.huge and s2[i] == math.huge)
     end
     return r
 end
