@@ -1,6 +1,6 @@
 # RSA Questions Tasks
 
-taslks to determine admission into `#questions-tier-2`
+tasks to determine admission into `#questions-tier-2`
 
 
 ## Disclaimers: 
