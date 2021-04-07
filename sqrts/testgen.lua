@@ -2,16 +2,18 @@
 Autogenerates test cases for squares problem
 
 output: array of:
-  limit, a non-negative integer
+   num, a positive integer
+   approx, a positive integer
+   bound, a positive real number < 1
 ]]
 return {function(n)
     n = n or 100
     local t = {}
     for i = 1, n do
         local num = math.random(1,500)
-        local root = math.random(1,num)
-        local bound = math.random()/30000
-        t[i] = {num,root,bound}
+        local approx = math.random(1,num)
+        local bound = (1-math.random())/30000
+        t[i] = {num,approx,bound}
     end
     return t
 end,{
