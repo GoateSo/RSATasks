@@ -36,7 +36,7 @@ end
 
 for input, output in pairs(testCases) do
     local res = minimum_distance(input)
-    assert(math.abs(res - output) < 1e-6, ("for (%s), expected %f, got %f"):format(
+    assert(math.abs(res - output) < 1e-4, ("for (%s), expected %f, got %f"):format(
         formatV3Arr(input),
         output,
         res
