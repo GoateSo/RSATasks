@@ -1,6 +1,6 @@
 --[[
 directions: given a string containing at least 2 unescaped quotation marks(") and any number of escaped quotation marks (\"),
-	    find the first string of characters between unescaped quotation marks without heavily using string patterns
+	    find the first string of characters between unescaped quotation marks without using string patterns
 
 input: a string containing at least 2 unescaped quotes and any number of escaped quotes
 
