@@ -10,18 +10,18 @@ output:
     an array of the intermediate results
     
 ex: 
-    scanRight({1,3,5,7,9}, 0, function(a,b)
-        return b + a
+    scanRight({1,3,5,7,9}, 0, function(b, a)
+        return a - b
     end)
 yields
-    {25,24,21,16,9,0}
+    {-25, -24, -21, -16, -9, 0}
 since
     0 = 0
-    0 + 9 = 9
-    9 + 7 = 16
-    16 + 5 = 21
-    21 + 3 = 24
-    25 + 1 = 25
+    0 - 9 = -9
+    -9 - 7 = -16
+    -16 - 5 = -21
+    -21 - 3 = -24
+    -25 - 1 = -25
 ]]
 
 local mkTests,testCases = table.unpack(require(script.Parent.testgen))
