@@ -21,7 +21,7 @@ since
     -9 - 7 = -16
     -16 - 5 = -21
     -21 - 3 = -24
-    -25 - 1 = -25
+    -24 - 1 = -25
 ]]
 
 local mkTests,testCases = table.unpack(require(script.Parent.testgen))
