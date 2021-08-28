@@ -22,10 +22,6 @@ local function getString(str)
 end
 
 --testing template
-for _,str in ipairs(mkTests()) do
-    local res = getString(str)
-end
-
 for input, output in pairs(testCases) do
     local res = getString(input)
     assert(res == output,("failed for %q, expected %s got %s"):format(input,output,res))
