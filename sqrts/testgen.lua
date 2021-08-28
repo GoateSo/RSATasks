@@ -1,6 +1,4 @@
  --[[
-Autogenerates test cases for squares problem
-
 output: array of:
    num, a positive integer
    approx, a positive integer
