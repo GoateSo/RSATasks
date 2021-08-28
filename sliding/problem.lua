@@ -29,12 +29,6 @@ local function sliding(arr, width, step)
 end
 
 --test template
-for _,v in ipairs(mkTests()) do
-    local arr, width, step = table.unpack(v)
-    local out = sliding(arr, width, step)
-    --...
-end
-
 local function eq(s1,s2)
     local r = #s1 == #s2
     for i,t in ipairs(s1) do
@@ -47,11 +41,11 @@ local function eq(s1,s2)
 end
 
 local function stringify(r)
-	local t = {}
-	for i,t2 in ipairs(r) do
-		t[i] = "{"..table.concat(t2,", ").."}"
-	end
-	return "{"..table.concat(t,", ").."}"
+    local t = {}
+    for i,t2 in ipairs(r) do
+        t[i] = "{"..table.concat(t2,", ").."}"
+    end
+    return "{"..table.concat(t,", ").."}"
 end
 
 for input, output in pairs(testCases) do
