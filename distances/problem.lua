@@ -29,11 +29,6 @@ local function formatV3Arr(a)
     return "{"..table.concat(r,", ").."}"
 end
 
-for _,points in ipairs(mkTests()) do
-    local distance = minimum_distance(points) 
-    -- ...
-end
-
 for input, output in pairs(testCases) do
     local res = minimum_distance(input)
     assert(math.abs(res - output) < 1e-4, ("for (%s), expected %f, got %f"):format(
