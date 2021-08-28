@@ -32,12 +32,6 @@ local function scanRight(arr, init, op)
 end
 
 --testing template
-for _,case in ipairs(mkTests()) do
-    local arr, init, op = table.unpack(case)
-    local results = scanRight(arr, init, op)
-    --...
-end
-
 local function eq(s1,s2)
     local r = #s1 == #s2
     for i,v in ipairs(s1) do
