@@ -14,7 +14,7 @@ since
 	while there are quotations around "Hello", they're escaped so they can neither act as starting quotes nor ending quotes, and are instead treated as literal characters
 ]]
 
-local mkTests, testCases = table.unpack(require(script.Parent.testgen))
+local testCases = require(script.Parent.testgen)
 
 --template
 local function getString(str)

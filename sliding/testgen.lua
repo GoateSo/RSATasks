@@ -1,25 +1,10 @@
 --[[
-Autogenerates test cases for sliding problem
-
 output: arrays of three values:
 	arr, a possibly empty array
 	width, a positive integer 
 	step, a positive integer 
 ]]
-return {function(n)
-    n = n or 100
-    local ret = {}
-    for i = 1, n do
-        local t = {}
-		local l = math.random(0,15)
-        for i = 1, l do
-            t[i] = math.random(-100,100) 
-        end
-		local m = math.max(l-2,1)
-        ret[i] = {t,math.random(1,m),math.random(1,m)}
-    end
-    return ret
-end,{
+return {
     [{{}, 1, 1}] = {};
     [{{}, 1, 1}] = {};
     [{{12}, 1, 1}] = {{12}};
@@ -113,4 +98,4 @@ end,{
     [{{55, 78, -76, -52, 80, -27, -76, 69, -31, 9, -31, 16, -50, 65, -7}, 13, 1}] = {{55, 78, -76, -52, 80, -27, -76, 69, -31, 9, -31, 16, -50}, {78, -76, -52, 80, -27, -76, 69, -31, 9, -31, 16, -50, 65}, {-76, -52, 80, -27, -76, 69, -31, 9, -31, 16, -50, 65, -7}};
     [{{-85, -12, -22, 94, 90, -97, 86, 26, 11, 9, 61, -23, -14, -41, 77}, 13, 10}] = {{-85, -12, -22, 94, 90, -97, 86, 26, 11, 9, 61, -23, -14}};
     [{{83, -75, -30, 36, 77, -92, -96, -87, -92, -49, -98, -22, 41, -19, -80}, 7, 8}] = {{83, -75, -30, 36, 77, -92, -96}, {-92, -49, -98, -22, 41, -19, -80}};
-}}
+}

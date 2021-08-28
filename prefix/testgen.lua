@@ -1,34 +1,10 @@
 --[[
-Autogenerates test cases for prefix problem
 output:
 	a prefix expression of arbitrary length with an arbitrary combination of the operators listed in problem.lua
 ]]
-local function rDigit()
-	return tostring(math.random(0,9))
-end
-
-function rExpr()
-	local r = math.random()
-	if r < 0.25 then
-		return rDigit()
-	elseif r >= 0.25 and r < 0.4 then
-		return  "&".. rExpr()
-	elseif r >= 0.4 and r < 0.7 then
-		return "+".. rDigit().. rExpr()
-	else
-		return "-".. rDigit().. rExpr()		
-	end
-end
 
 
-return { function(n)
-    n = n or 100
-    local ret = {}
-    for i = 1, n do
-        ret[i] = rExpr() 
-    end
-    return ret
-end, {
+return {
     ["1"] = 1;
     ["5"] = 5;
     ["2"] = 2;
@@ -110,4 +86,4 @@ end, {
     ["&+8+7&-0&+9&&&+1-9-4+8-09"] = 120;
     ["+5+7-0-1&-9&-6+6-9+5+2&+71"] = 11;
     ["-3-6-9+7+9+8+0+7-9+1+4&&-93"] = 202;
-}}
+}

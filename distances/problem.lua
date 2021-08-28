@@ -12,7 +12,7 @@ Example:
 	and the distance between the second and third point is ~11.575837.
 ]]
 
-local mkTests,testCases = table.unpack(require(script.Parent.testgen))
+local testCases = require(script.Parent.testgen)
 
 -- Only modify this function!
 -- Bonus challenge ((Optional)) : solve this in O(n log n) time.
@@ -27,11 +27,6 @@ local function formatV3Arr(a)
         r[i] = "("..tostring(v)..")" 
     end
     return "{"..table.concat(r,", ").."}"
-end
-
-for _,points in ipairs(mkTests()) do
-    local distance = minimum_distance(points) 
-    -- ...
 end
 
 for input, output in pairs(testCases) do

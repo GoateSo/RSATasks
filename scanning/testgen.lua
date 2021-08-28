@@ -1,45 +1,11 @@
 --[[
-Autogenerates test cases for scanning problem
-
 output: arrays of
     arr, a possibly empty array
     init, an integer
     op, a binary function which acts on 2 numbers and returns a number
 ]]
 
-local functions = {
-    function(a,b)
-        return a + b
-    end,
-    function(a,b)
-        return a - b
-    end,
-    function(a,b)
-        return a * b
-    end,
-    function(a,b)
-        return a - b * 2
-    end,
-    function(a,b)
-        return a * a + b * b
-    end,
-    function(a,b)
-        return a/2*(a-1)/(math.abs(b)+1)
-    end
-}
-
-return {function(n)
-    n = n or 100
-    local ret = {}
-    for i=1,n do
-        local t = {}
-        for j=1,math.random(50) do
-            t[j] = math.random(-100,100)
-        end
-        ret[i] = {t,math.random(-1000,1000),functions[math.random(#functions)]}
-    end
-    return ret
-end,{
+return {
     [{{61}, 202,function (a, b) return a - b end}] = {-141, 202};
     [{{82}, 488,function (a, b) return b * a end}] = {40016, 488};
     [{{17}, 398,function (a, b) return b * a end}] = {6766, 398};
@@ -96,7 +62,7 @@ end,{
     [{{-18}, -380,function (a, b) return math.floor(math.sqrt(a*a + b*b)) end}] = {380, -380};
     [{{-75}, -211,function (a, b) return math.floor(math.sqrt(a*a + b*b)) end}] = {223, -211};
     [{{74, -59, -89, 36, -22, 80, -59, 90}, 270,function (a, b) return a - b end}] = {27, 47, -106, 17, 19, -41, 121, -180, 270};
-   [{{39, 28, 44, 18, 22, -2, 100, 53, 82}, -17,function (a, b) return a - b end}] = {207, -168, 196, -152, 170, -148, 146, -46, 99, -17};
+    [{{39, 28, 44, 18, 22, -2, 100, 53, 82}, -17,function (a, b) return a - b end}] = {207, -168, 196, -152, 170, -148, 146, -46, 99, -17};
     [{{-52, 58, -79, -65, 68, 62, 41, -8, 65}, 10,function (a, b) return a - b end}] = {-14, -38, 96, -175, 110, -42, 104, -63, 55, 10};
     [{{69, 42, 85, -61, 65, -30, 65, 3, 30}, -324,function (a, b) return b - a end}] = {-592, -523, -481, -396, -457, -392, -422, -357, -354, -324};
     [{{-20, -29, 98, 64, 38, 25, 91, 93, 37}, 385,function (a, b) return b - a end}] = {-12, -32, -61, 37, 101, 139, 164, 255, 348, 385};
@@ -128,4 +94,4 @@ end,{
     [{{84, -27, -47, 89, -6, 2, -100, 32, 40}, -466,function (a, b) return math.floor(math.sqrt(a*a + b*b)) end}] = {495, 488, 488, 486, 478, 478, 478, 468, 467, -466}; 
     [{{-33, -64, 97, 28, 9, 97, 95, 77, -21, -96}, 466,function (a, b) return math.floor(math.sqrt(a*a + b*b)) end}] = {513, 512, 508, 499, 499, 499, 490, 481, 475, 475, 466};
     [{{39, -83, 40, -42, -31, 41, -53, -30, 56, 7}, 367,function (a, b) return math.floor(math.sqrt(a*a + b*b)) end}] = {391, 390, 382, 380, 378, 377, 375, 372, 371, 367, 367};
-}}
+}
