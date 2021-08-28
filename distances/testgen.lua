@@ -1,6 +1,4 @@
 --[[
-Autogenerates test cases for distance problem
-
 output: 
     possibly empty arrays of vector3s
 ]]
