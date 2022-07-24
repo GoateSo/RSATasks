@@ -8,7 +8,7 @@ tasks to determine admission into `#questions-tier-2`
 - Cheaters will be disqualified, and those who fail to appear competent enough to be in the tiered channels will be removed from the channel.
 - You will be required to submit your solution.
 - **solutions have to fulfill the input and output requirements of the task**
-- if a problem gives you an array, try not to modify the array (it makes testing a slight headache)
+- if a problem gives an array as input, **DO NOT MODIFY IT** unless explicitly told to do so
 
 ## Additional information:
 - each task consists of 
