@@ -9,7 +9,7 @@ Example:
 	then minimum_distance(points) yields 3,
 	because the distance between the first two points is ~11.18,
 	and the distance between the first and third point is 3,
-	and the distance between the second and third point is ~11.56.
+	and the distance between the second and third point is ~11.58.
 ]]
 
 local testCases = require(script.Parent.testgen)
