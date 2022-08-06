@@ -5,7 +5,7 @@ output:
 
 
 return {
-    ["1"] = 1;
+    ["1"] = 1; -- note that single digits can be expressions too
     ["5"] = 5;
     ["2"] = 2;
     ["&3"] = 6;
