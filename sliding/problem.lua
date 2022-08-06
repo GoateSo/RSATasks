@@ -27,6 +27,7 @@ end
 
 --test template
 
+--- check whether two arrays of arrays are equal  
 local function eq(s1,s2)
     local r = #s1 == #s2
     for i,t in ipairs(s1) do
@@ -38,6 +39,7 @@ local function eq(s1,s2)
     return r
 end
 
+-- convert array into string for display
 local function stringify(r)
     local t = {}
     for i,t2 in ipairs(r) do
@@ -46,6 +48,7 @@ local function stringify(r)
     return "{"..table.concat(t,", ").."}"
 end
 
+-- run test cases on your solution
 for input, output in pairs(testCases) do
     local res = sliding(unpack(input))
     assert(eq(res,output),("failed for ({%s}, %d, %d), expected %s got %s"):format(

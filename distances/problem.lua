@@ -7,9 +7,9 @@ Output: the distance between the closest pair of points, or 0 if there are less 
 Example:
 	if points = { Vector3.new(0, 5, 10), Vector3.new(10, 10, 10), Vector3.new(0, 5, 7) },
 	then minimum_distance(points) yields 3,
-	because the distance between the first two points is ~11.180340,
+	because the distance between the first two points is ~11.18,
 	and the distance between the first and third point is 3,
-	and the distance between the second and third point is ~11.575837.
+	and the distance between the second and third point is ~11.56.
 ]]
 
 local testCases = require(script.Parent.testgen)
@@ -21,6 +21,7 @@ local function minimum_distance(points)
 end
 
 --testing template
+-- format an array of vector3s into a string for display
 local function formatV3Arr(a)
     local r = {}
     for i, v in ipairs(a) do

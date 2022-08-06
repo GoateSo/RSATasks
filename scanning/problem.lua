@@ -32,6 +32,7 @@ local function scanRight(arr, init, op)
 end
 
 --testing template
+---comment check if two values are equal within a certain error due to how numbers work
 local function eq(s1,s2)
     local r = #s1 == #s2
     for i,v in ipairs(s1) do
