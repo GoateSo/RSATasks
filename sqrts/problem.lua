@@ -30,7 +30,7 @@ local function approxSqrts(num, approx, bound)
 end
  
 --testing 
-for input, output in ipairs(testCases) do
+for input, output in pairs(testCases) do
     local num,approx,bound = table.unpack(input)
     local approxs = approxSqrts(num,approx,bound)
     local answers = table.unpack(output)

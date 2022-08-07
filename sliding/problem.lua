@@ -50,7 +50,7 @@ end
 
 -- run test cases on your solution
 for input, output in pairs(testCases) do
-    local res = sliding(unpack(input))
+    local res = sliding(table.unpack(input))
     assert(eq(res,output),("failed for ({%s}, %d, %d), expected %s got %s"):format(
         table.concat(input[1], ", "),
         input[2],

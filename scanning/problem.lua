@@ -42,7 +42,7 @@ local function eq(s1,s2)
 end
 
 for input, output in pairs(testCases) do
-    local res = scanRight(unpack(input))
+    local res = scanRight(table.unpack(input))
     assert(eq(res,output),("failed for ({%s}, %d, %q), expected {%s} got {%s}"):format(
         table.concat(input[1], ", "),
         input[2],
