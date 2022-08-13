@@ -33,9 +33,8 @@ end
 for input, output in pairs(testCases) do
     local num,approx,bound = table.unpack(input)
     local approxs = approxSqrts(num,approx,bound)
-    local answers = table.unpack(output)
-    assert(#answers == #approxs, ("expected %d approxmations, got %d instead"):format(#answers,#approxs))
-    for i, v in ipairs(answers) do
+    assert(#output == #approxs, ("expected %d approxmations, got %d instead"):format(#output,#approxs))
+    for i, v in ipairs(output) do
         assert(math.abs(v - approxs[i]) < 1e-8, ("expected %f for approximation #%d, got %d instead"):format(v,i,approxs[i]))
     end
 end
