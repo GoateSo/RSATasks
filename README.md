@@ -4,7 +4,7 @@ tasks for admission into `#adv-scripting`
 
 To submit a solution, message `@Pandas#0273` or `@ModMail#5460` with your solution as a lua file, code block, a pastebin, or any similar website thereof **(not as an image or a roblox place file)**
 
-For any issue with any of the test cases, templates, or descriptions you may have found, please also DM me (`@GoateSo#9628`) about it
+For any issue with any of the test cases/templates/descriptions you may have found, or for any suggestions you may have, please also DM me (`@GoateSo#9628`) about it.
 
 ## Directions:
 
