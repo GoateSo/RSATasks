@@ -2,8 +2,8 @@
 
 ### Directions:
 produce an array containing the middle results of applying a 2 argument function from right → left on an array
-
-
+  
+___
 ### Input:
 `arr:` a possibly empty array of numbers (could include the initial value)
 `init:` a number representing the inital value
@@ -13,9 +13,10 @@ produce an array containing the middle results of applying a 2 argument function
 ### Output:
 an array of the intermediate results
 
+___
 ### Example:
 
-for input:
+for Input:
 ```lua
 arr = {1,3,5,7,9}
 init = 0
@@ -23,7 +24,7 @@ op = function(b, a)
   return a - b
 end
 ```
-the output should be 
+the Output: should be 
 ```lua
 {-25, -24, -21, -16, -9, 0}
 ```

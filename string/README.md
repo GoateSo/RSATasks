@@ -2,22 +2,24 @@
 
 ### Directions:
 
-given a string containing at least 2 unescaped quotation marks (`"`) and any number of escaped quotation marks (`\"`), find the **first** string of characters between unescaped quotation marks without using string patterns. 
+given a string containing at least 2 unescaped quotation marks (`"`) and any number of escaped quotation marks (`\"`), find the **first** string of characters between unescaped quotation marks without using string patterns.
 
-### Input
+___
+### Input:
 `str`, a string containing at least 2 unescaped quotation marks and any number of escaped quotation marks
 
-
-### Output
+### Output:
  a string of the character between the unescaped quotes
+
+___
 
 ### Example
 
-for input: 
+for Input: 
 ```lua
 str = [[Bob told me: "Jimmy says \"Hello\""]]
 ```
-the output should be 
+the Output: should be 
 ```lua
 [[Jimmy says \"Hello\"]]
 ```

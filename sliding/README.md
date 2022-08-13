@@ -4,25 +4,28 @@
 
 Groups elements of the array in fixed size blocks by passing a "sliding window" over them, stopping when the number of elements in the collection is smaller than the  width
  
+___
 
-### Input
+### Input:
 `arr`, the array which the sliding window is passed over
 `width`, the number of elements per group
 `step`, the distance between the first elements of each group
 
 
-### Output
+### Output:
 an array of arrays of size `width` each representing a window of `arr`
+
+___
 
 ### Example
 
-for input: 
+for Input: 
 ```lua
 arr = {1, 2, 3, 4}
 width = 2
 step = 1
 ```
-the output should be 
+the Output: should be 
 ```lua
 {{1, 2}, {2, 3}, {3, 4}}
 ```
@@ -33,13 +36,13 @@ as passing window of size 2 over the array gives:
 {1, 2, [3, 4]}   --move start up 1, window : {3,4}
 ```
 ---
-another example with a larger step would be for input:
+another example with a larger step would be for Input:
 ```lua
 arr = {1, 2, 3, 4, 5, 6}
 width = 2 
 step = 3
 ```
-the output should be 
+the Output: should be 
 ```lua
 {{1, 2}, {4, 5}}
 ```

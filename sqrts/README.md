@@ -9,24 +9,24 @@ you can generate a better approximation using the formula:
 
 
 This task should be done without the use of `math.sqrt`. When checking whether an approximation is in bound, check whether `|num - approximate²| < bound` instead of `|math.sqrt(num) - approximate| < bound`
-
-### Input
+___
+### Input:
 `num`, a positive integer to get the square root of (not necessarily a perfect square)
 `approx`, a positive integer which will be the inital approximation 
 `bound`, an acceptable error bound
 
-### Output
+### Output:
 a list of approximations of the square root
-
+___
 ### Example
 
-for input: 
+for Input: 
 ```lua
 num = 3
 approx =  1
 bound = 1e-6 --1 * 10^-6
 ```
-the output should be 
+the Output: should be 
 ```lua
 {1, 2, 1.75, 1.7321428571428572, 1.7320508100147274}
 ```

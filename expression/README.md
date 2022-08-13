@@ -17,21 +17,24 @@ For `&`, if the value of `<expr>` is negative, the result should be 0 (it should
 
 Some example expressions can be found in the `testgen.lua` file
 
+___
 
-### input:
+### Input:
 
 `s`, a string representing an expreesion
 
-### output:
+### Output:
 
 a number which reprsents the value gotten by evaluating the expression
 
-### example:
-for input:
+___
+
+### Example:
+for Input:
 ```lua
 s = "&+1-53"
 ```
-the output should be 
+the Output: should be 
 ```lua
 6
 ```
