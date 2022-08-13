@@ -1,6 +1,7 @@
 # Evaluate Expression in given Notation
 
 ### directions: 
+___
 
 evaluate an expression given as a string with the following operations or a single digit:
 
@@ -17,16 +18,21 @@ For `&`, if the value of `<expr>` is negative, the result should be 0 (it should
 
 Some example expressions can be found in the `testgen.lua` file
 
+**Further Clarification**: an operation `-(d)(exp)` (as well as `+(d)(exp)`) should be thought of as `(d) - (exp)` (or `(d) + (exp)`) where both `d` and `exp` are already evaluated
 
 ### input:
+___
 
 `s`, a string representing an expreesion
 
 ### output:
+___
 
 a number which reprsents the value gotten by evaluating the expression
 
 ### example:
+___
+
 for input:
 ```lua
 s = "&+1-53"
@@ -35,6 +41,6 @@ the output should be
 ```lua
 6
 ```
-first, the subtraction `-53` is performed, which evaluates to `5 - 3 = 2`
-then the result of that is used in an addition, which evaluates to `1 + 2 = 3`
-finally the result of that addition is given to `&` which evaluates to `1 + 2 + 3 = 6`
+1. the subtraction `-53` is performed, which evaluates to `5 - 3 = 2`
+2. the result of that is used in an addition, which evaluates to `1 + 2 = 3`
+3. the result of that addition is given to `&` which evaluates to `1 + 2 + 3 = 6`
